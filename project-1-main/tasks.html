@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoDoro - To-Do List</title>
+    <link rel="stylesheet" href="tasks.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="icons/pomodoro.png" alt="ChronoDoro Logo">
+            <h3>ChronoDoro</h3>
+        </div>
+    </header>
+    <section id="tasks-page">
+        <div class="container">
+            <h1>Welcome, <span id="username"></span>!</h1>
+            <p>Let’s list your tasks for today:</p>
+
+            <!-- Input for adding tasks -->
+            <form id="task-form">
+                <input 
+                    type="text" 
+                    id="task-input" 
+                    placeholder="Enter a task..." 
+                    required 
+                />
+                <button type="submit" class="button">Add Task</button>
+            </form>
+
+            <!-- Task list -->
+            <ul id="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+
+            <button id="start-session" class="button" disabled>Start Study Session</button>
+        </div>
+    </section>
+    <script src="tasks.js"></script>
+</body>
+</html>
